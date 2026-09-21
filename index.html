@@ -2226,13 +2226,10 @@ function mostrarSorpresa() {
     const musica =
         document.getElementById("musica");
 
+    musica.volume = 1.0;
     musica.currentTime = 0;
 
-    musica.play().catch(
-        function(error) {
-            console.log("No se pudo iniciar la música:", error);
-        }
-    );
+    musica.play();
 
 
     /* -----------------------------------------------
